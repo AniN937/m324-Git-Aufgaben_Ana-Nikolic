@@ -1,4 +1,4 @@
-name: lint-format-test
+name: CI
 
 on:
   pull_request:
@@ -18,7 +18,7 @@ jobs:
           node-version: '18.x'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run linter
         run: npm run lint
